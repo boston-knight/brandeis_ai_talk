@@ -15,30 +15,33 @@ You'll install three things:
 
 ## Step 1: Get the folder
 
-Copy the `student2` folder anywhere you like, e.g. `Documents/student2`. If you received a zip,
-unzip it first. (If you use git: `git clone <repo>` and `cd <repo>/student2`.)
+Get the `brandeis_ai_talk` folder anywhere you like, e.g. `Documents/brandeis_ai_talk`:
+
+- **With git:** `git clone https://github.com/boston-knight/brandeis_ai_talk.git`
+- **Without git:** on https://github.com/boston-knight/brandeis_ai_talk click **Code → Download ZIP**,
+  then unzip it (the folder may be named `brandeis_ai_talk-main`).
 
 ## Step 2: Run the installer
 
 **macOS**
 1. Open *Terminal* (press ⌘-Space, type "Terminal", press Enter).
-2. Type `cd ` (with a space), drag the `student2` folder into the Terminal window, press Enter.
+2. Type `cd ` (with a space), drag the `brandeis_ai_talk` folder into the Terminal window, press Enter.
 3. Type `./install.sh` and press Enter.
    - If Python is missing it uses Homebrew. Without Homebrew, install Python from
      https://www.python.org/downloads/ first and run `./install.sh` again.
 
 **Windows**
-1. Open the `student2` folder in File Explorer.
+1. Open the `brandeis_ai_talk` folder in File Explorer.
 2. Double-click **`install.bat`**. If Windows SmartScreen warns you, click *More info → Run anyway*.
    - It installs Python 3.12 and Git for Windows with `winget` if they're missing (Claude Code needs
      Git's "Git Bash" shell on Windows). If it says Python isn't on PATH yet, close the window and
      double-click `install.bat` again.
 
-**Linux**: `cd student2 && ./install.sh` (uses apt, dnf, pacman or zypper if Python is missing).
+**Linux**: `cd brandeis_ai_talk && ./install.sh` (uses apt, dnf, pacman or zypper if Python is missing).
 
 The installer:
 1. finds or installs Python ≥ 3.10;
-2. creates a private environment in `student2/.venv` (nothing is installed system-wide);
+2. creates a private environment in `brandeis_ai_talk/.venv` (nothing is installed system-wide);
 3. installs numpy, pandas, scipy, matplotlib, yfinance and the `ai401k` engine;
 4. downloads 25 years of prices for the ETFs (or uses the bundled snapshot with `--offline`);
 5. runs the 13 automated tests: you should see `13 passed`;
@@ -63,7 +66,7 @@ Official documentation: https://docs.claude.com/en/docs/claude-code/setup
 ## Step 4: Sign in and start
 
 ```bash
-cd path/to/student2
+cd path/to/brandeis_ai_talk
 claude
 ```
 
@@ -75,7 +78,7 @@ Anthropic Console login). Then:
    (what Claude may and may not do). **This matters:** until the folder is trusted, Claude Code
    ignores the settings' allow-list, so every engine command needs a manual permission click (and
    in non-interactive runs, e.g. `claude -p`, they are refused). Always start `claude` from inside
-   `student2`, or the folder's settings and commands aren't found at all.
+   `brandeis_ai_talk`, or the folder's settings and commands aren't found at all.
 2. Type **`/onboard`** and answer the questions.
 
 ## Step 5: Verify (optional)
@@ -91,7 +94,7 @@ and `/agents` to see `macro-analyst` and `risk-officer`.
 ## What's in the folder
 
 ```
-student2/
+brandeis_ai_talk/
 ├── README.md  INSTALL.md  RUNBOOK.md  STRATEGY.md     documentation
 ├── CLAUDE.md                     the committee rules Claude Code follows
 ├── .claude/
@@ -119,7 +122,7 @@ student2/
 - **Update prices**: `./ai401k.sh data` (Claude does this every month).
 - **Update the kit**: replace the files but **keep** `portfolio/`, `journal/` and your edited `config/`
   files, then run the installer again.
-- **Uninstall**: delete the `student2` folder. Nothing was installed outside it apart from Python,
+- **Uninstall**: delete the `brandeis_ai_talk` folder. Nothing was installed outside it apart from Python,
   Git (Windows) and Claude Code.
 
 ## Privacy
