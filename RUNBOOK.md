@@ -4,7 +4,7 @@ What to do, when, and what to type. Time needed: **one hour once**, then **about
 Everything happens in a terminal inside this folder, talking to Claude Code in plain English.
 
 ```
-cd student2        # this folder
+cd brandeis_ai_talk   # this folder
 claude             # start Claude Code; then type the slash commands below
 ```
 

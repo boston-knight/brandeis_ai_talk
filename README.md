@@ -51,7 +51,7 @@ Full methodology, back-test results and references: **[STRATEGY.md](STRATEGY.md)
 ## Quick start
 
 ```bash
-git clone https://github.com/petacube/ai-401k-committee.git && cd ai-401k-committee
+git clone https://github.com/boston-knight/brandeis_ai_talk.git && cd brandeis_ai_talk
 ./install.sh            # Windows: double-click install.bat     (details: INSTALL.md)
 claude                  # start Claude Code in this folder
 /onboard                # first session: interview → plan → back-test → first allocation
@@ -60,7 +60,8 @@ claude                  # start Claude Code in this folder
 
 ## Worked example (the inputs above, $1M goal in today's dollars, 70% confidence)
 
-From `examples/` (generated with real prices on 2026-10-21). **Live example dashboard:** https://petacube.github.io/ai-401k-committee/examples/dashboard.html
+From `examples/` (generated with real prices on 2026-10-21). **Example dashboard:** open [`examples/dashboard.html`](examples/dashboard.html) in a browser after cloning
+(hosted copy: https://petacube.github.io/ai-401k-committee/examples/dashboard.html)
 
 - $1M today ≈ **$1.85M** in 2051 dollars at 2.5% inflation.
 - Best feasible plan: 50% US / 40% intl / 8% gold / 2% cash; median outcome $2.14M (≈ $1.16M in
